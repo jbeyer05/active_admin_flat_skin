@@ -1,5 +1,5 @@
 # ActiveAdminFlatSkin
-Forked from [http://ayann.github.io/active_admin_flat_skin](http://ayann.github.io/active_admin_flat_skin), to make a few tweaks.
+Forked from [https://github.com/ayann/active_admin_flat_skin](https://github.com/ayann/active_admin_flat_skin), to make a few tweaks.
 
 [![Gem Version](https://badge.fury.io/rb/active_admin_flat_skin.svg)](http://badge.fury.io/rb/active_admin_flat_skin)
 
@@ -28,9 +28,9 @@ Flat skin for active admin.
 
 ## Installation
 
-As active_skin is the css theme for the [active_admin](https://github.com/gregbell/active_admin) administration framework - you have to install if first.
+As active_skin is a css theme for the [active_admin](https://github.com/gregbell/active_admin) administration framework, you have to install Active Admin first.
 
-Having active admin installed add the following line to your application's Gemfile:
+Once Active Admin is installed, add the following line to your application's Gemfile:
 
 ```ruby
 gem 'active_admin_flat_skin'
@@ -47,7 +47,7 @@ Or install it yourself as:
 
 ## Usage
 
-include active flat skin css
+include active flat skin css:
 
     # active_admin.css.scss
 
@@ -57,15 +57,15 @@ include active flat skin css
     @import "active_admin_flat_skin";
     ...
 
-include also font awesome 
+also include font awesome:
 
     # active_admin.css.scss
      
     @import "font-awesome";
     
-    //in some case should be specified css ( @import "font-awesome.css"; )
+    //in some cases, extension should be specified ( @import "font-awesome.css"; )
     
-include active flat skin js
+include active flat skin js:
 
     # active_admin.js
 
@@ -74,7 +74,9 @@ include active flat skin js
     //= require active_admin_flat_skin
     ...
 
-You can even change basic colors of the theme by placing some other variables:
+You can even change basic colors of the theme with Sass variables. Be sure
+to assign these variables **before** importing the CSS/Sass file as
+described above.
 
     ...
     $panelBorder: #babdc5;
@@ -110,7 +112,7 @@ You can even change basic colors of the theme by placing some other variables:
 
 ## Contributing
 
-1. Fork it ( https://github.com/ayann/active_admin_flat_skin/fork )
+1. Fork it ( https://github.com/ajw725/active_admin_flat_skin/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
