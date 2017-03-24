@@ -32,19 +32,6 @@ jQuery(document).ready(function($) {
     $(this).hide();
   });
 
-  $('.has_nested').click( function(e) {
-    e.preventDefault();
-    var elt = $(this);
-    if( elt.hasClass('active') ) {
-      window.location = elt.children('a').attr('href');
-    } else {
-      $('.has_nested').removeClass('active');
-      $('.has_nested .slided_down').slideUp().removeClass('slided_down');
-      elt.addClass('active');
-      elt.children('ul').slideToggle().toggleClass('slided_down');
-    }
-  });
-  
   $('.has_nested').mouseenter( function() {
     $(this).addClass('active');
     $(this).children('ul').slideDown().addClass( 'slided_down' );
