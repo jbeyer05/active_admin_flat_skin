@@ -31,8 +31,11 @@
   .header-item.tabs#tabs{
     li{
       display: block;
-      margin-bottom: 20px !important;
-      &:hover, &:hover a {
+      padding-bottom: 20px !important;
+      &.active {
+        padding-bottom: 0 !important;
+      }
+      &:hover, &:hover > a {
         background-color: $skinActiveColor !important;
         color: $skinTextActiveColor !important;
       }
@@ -82,8 +85,7 @@
             position: relative;
             float: none;
             border-radius: 0;
-            // padding: 0;
-            padding: 3px 0px 5px 0;
+            padding-bottom: 0;
             background-color: $skinBlackLight;
             box-shadow: 0 0 2px rgba(0, 0, 0, 0.8) inset;
           }
