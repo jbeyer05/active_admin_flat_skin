@@ -1,4 +1,6 @@
 # ActiveAdminFlatSkin
+Forked from [http://ayann.github.io/active_admin_flat_skin](http://ayann.github.io/active_admin_flat_skin), to make a few tweaks.
+
 [![Gem Version](https://badge.fury.io/rb/active_admin_flat_skin.svg)](http://badge.fury.io/rb/active_admin_flat_skin)
 
 Flat skin for active admin.

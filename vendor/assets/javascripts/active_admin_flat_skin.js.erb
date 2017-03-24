@@ -32,14 +32,12 @@ jQuery(document).ready(function($) {
     $(this).hide();
   });
 
-  $('.has_nested').each(function(index, el) {
-    $(this).click(function(event) {
-      $siblings = $(this).siblings('.has_nested').find('.slided_down');
-      $siblings.slideUp().removeClass('slided_down');
-      $(this).find('ul').slideToggle().toggleClass('slided_down');
-    });
-  });
-
-
-
+  $('.has_nested').hover(
+    function(e) {
+      $(this).children('ul').slideDown().addClass('slided_down');
+    },
+    function(e) {
+      $(this).children('ul').slideUp().removeClass('slided_down');
+    }
+  );
 });
