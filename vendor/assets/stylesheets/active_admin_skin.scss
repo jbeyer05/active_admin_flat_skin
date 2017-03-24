@@ -648,7 +648,10 @@ html {
     position: fixed;
     top: 10%;
     right: 25%;
+    bottom: 0;
     z-index: 2000;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
 
     h3{
       width: 100% !important;
