@@ -32,6 +32,10 @@
     li{
       display: block;
       margin-bottom: 20px !important;
+      &:hover, &:hover a {
+        background-color: $skinActiveColor !important;
+        color: $skinTextActiveColor !important;
+      }
 
       a{
         height: 35px;
@@ -82,14 +86,6 @@
             padding: 3px 0px 5px 0;
             background-color: $skinBlackLight;
             box-shadow: 0 0 2px rgba(0, 0, 0, 0.8) inset;
-
-            li{
-              &:hover{
-                a{
-                  color: $skinActiveColor !important;
-                }
-              }
-            }
           }
         }
 
