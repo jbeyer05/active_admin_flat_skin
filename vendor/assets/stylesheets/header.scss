@@ -31,10 +31,6 @@
   .header-item.tabs#tabs{
     li{
       display: block;
-      padding-bottom: 20px !important;
-      &.active {
-        padding-bottom: 0 !important;
-      }
       &:hover, &:hover > a {
         background-color: $skinActiveColor !important;
         color: $skinTextActiveColor !important;
@@ -46,6 +42,8 @@
         color: $textGray !important;
         font-size: 14px;
         transition: all .3s;
+        padding-top: 10px;
+        padding-bottom: 10px;
       }
 
       &.current{
@@ -86,6 +84,7 @@
             float: none;
             border-radius: 0;
             padding-bottom: 0;
+            padding-top: 0 !important;
             background-color: $skinBlackLight;
             box-shadow: 0 0 2px rgba(0, 0, 0, 0.8) inset;
           }
